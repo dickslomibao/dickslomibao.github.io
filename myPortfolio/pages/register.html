@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link rel="stylesheet" type="text/css" href="../css/register.css">
+	</head>
+<body>
+	<div class="container">
+		<div class="sub-container">
+			<form action="../">
+				<h1>Register</h1>
+
+				<label>Name:</label><br>
+				<input class ="field" type="text" name="fullName" required>
+
+				<label>Username:</label><br>
+				<input class ="field" type="text" name="username" required>
+
+				<label>Passwords:</label><br>
+				<input class ="field" type="password" name="password" required>
+				<label>Gender:</label><br>
+
+				<table cellspacing="10">
+					<tr>
+						<th>
+							<input type="radio" name="gender" value="male"> Male
+						</th>
+						<th>
+							<input type="radio" name="gender" value="female"> Female
+						</th>
+					</tr>
+				</table>
+				
+				<label>Birthdate:</label><br>
+				<input class ="field" type="date" name="birthdate"  required>
+
+				<button type="submit" class="register-btn">Register</button>
+			</form>
+		</div>	
+	</div>
+</body>
+</html>
