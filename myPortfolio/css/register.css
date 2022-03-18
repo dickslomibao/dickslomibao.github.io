@@ -4,19 +4,19 @@ body{
 }
 .container{
 	width: 100%;
-	height: 100vh;
+	height: auto;
 	background-image: url('../images/login-img.jpg');
 	background-size: cover;
 }
 .container .sub-container{
 	width: 100%;
-	height: calc(100vh - 50px);
-	background-color:rgba(0, 0, 0, .8);
+	height: 863px;
+	background-color:rgba(0, 0, 0, .9);
 	padding-top: 50px;
 }
 .container .sub-container form{
 	width: 350px;
-	height: 525px;
+	height: 550px;
 	padding: 50px 80px;
 	margin: auto;
 	border: 1px solid #eee;
@@ -48,9 +48,7 @@ body{
 	color: rgba(255, 255, 255, .6);
 	font-weight: 600;
 	text-decoration: none;
-	text-align: center;
  	font-size: 13px;
- 	float: right;
 }
 .container .sub-container form .register-btn{
 	padding: 10px 30px;
