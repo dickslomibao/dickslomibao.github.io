@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Lesson Plan</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../css/educ.css">
+		<link rel="stylesheet" type="text/css" href="../css/lessonplan.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<nav class="navigation-bar">
+			<div class="navigation-logo">
+				<h1>Future <span style="color: #FFCC1D;">Academy</span></h1>
+				<i class="fa-solid fa-bars toggle-navigation"></i>
+			</div>
+			<div class="navigation-list">
+				<ul>
+					<li>
+						<a href="../">Home</a>
+					</li>
+					<li class="active">
+						<a href="#">Lesson Plan</a>	
+					</li>
+					<li>
+						<a href="#">Demo</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container-fluid g-section">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-4">
+					<a href="#" class="selection selected-g">Grade 1</a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-4">
+					<a href="#" class="selection">Grade 2</a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-4">
+					<a href="#" class="selection">Grade 3</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid lp-section">
+			<h1>Lesson Plan</h1>
+
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-12">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQrFKL31FFJYlD9ILsThq0id5vlB7lqyZ29h6LCAGznscoTwkCes8LWDJqp3UkKew/embed?start=false&loop=true&delayms=3000" frameborder="0" class="embed-responsive" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+					</div>		
+				</div>
+				<div class="col-lg-4 col-md-4 col-12 info-columns">
+					<h4>Title: Meaning of Addition</h4>
+					<p>Prepared by: Mary Jane T. Dela Cruz</p>
+
+					<a href="https://docs.google.com/presentation/d/11fuJnkUy6GqDfTrYldWuDM0TFj0yWLrB/export?format=pptx" class="btn-download">Download Presentation</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-12 order-md-2">					
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQiwnqCqzYi0Lc3aPVAC1Fmeg7WttdFgjv1iTRGkEEY63WF-6Q-SDQkFkOiUgU2Dw/embed?start=false&loop=true&delayms=3000" frameborder="0" class="embed-responsive" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						</div>		
+					</div>
+					<div class="col-lg-4 col-md-4 col-12 info-columns order-md-1">
+						<h4>Title: Telling number and name of this days in a week</h4>
+						<p>Prepared by: Karen Castillo</p>
+
+						<a href="https://docs.google.com/presentation/d/1X9SFdP9Q7xq_P7QcxLLF3YZ0Jql-Wt_v/export?format=pptx" class="btn-download">Download Presentation</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript">
+			const button = document.querySelector(".toggle-navigation");
+			const navbar = document.querySelector(".navigation-list");
+
+			button.addEventListener('click', event => {
+
+				if (navbar.style.display === "none") {
+				    navbar.style.display = "block";
+				} else {
+				   	navbar.style.display = "none";
+				}
+			});
+		</script>
+	</body>
+</html>
