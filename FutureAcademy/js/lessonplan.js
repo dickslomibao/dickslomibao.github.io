@@ -1,9 +1,9 @@
-	const grade1Btn = document.querySelector("#grade1Btn");
+		const grade1Btn = document.querySelector("#grade1Btn");
 			const grade2Btn = document.querySelector("#grade2Btn");
 			const grade3Btn = document.querySelector("#grade3Btn");
 			const displayLesson = document.querySelector("#displayLesson");
 			const lessonplanTitle = document.querySelector(".ls-title");
-
+			const search = document.querySelector("#search-input");
 			let gradeFilterr;
 			let htmlResult;
 
@@ -241,6 +241,7 @@
 				grade2Btn.classList.remove("selected-g");
 				grade3Btn.classList.remove("selected-g");
 				lessonplanTitle.innerHTML="Lesson Plan for Grade 1";
+				search.value = "";
 				displayLesson.innerHTML = "";
 
 
@@ -257,7 +258,7 @@
 				grade3Btn.classList.remove("selected-g");
 				lessonplanTitle.innerHTML="Lesson Plan for Grade 2";
 				displayLesson.innerHTML = "";
-
+				search.value = "";
 
 				gradeFilterr = students.filter(students => students.grade === 2);
 
@@ -270,7 +271,8 @@
 				grade2Btn.classList.remove("selected-g");
 				lessonplanTitle.innerHTML="Lesson Plan for Grade 3";
 				displayLesson.innerHTML = "";
-
+				search.value = "";
+				
 				gradeFilterr = students.filter(students => students.grade === 3);
 
 
@@ -278,7 +280,7 @@
 		
 			});
 
-			const search = document.querySelector("#search-input");
+			
 			search.addEventListener('keyup', event => {
 				displayLesson.innerHTML = "";
 				if(search.value === ""){
