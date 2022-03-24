@@ -5,22 +5,22 @@
 	border-radius: 10px;
 	font-weight: 400;
 	font-size: 15px;
-	border: 1px solid #116530;
+	background-color: white;
 
 }
 .container-fluid .row .selected-g{
-	background-color: #116530;
-	color: white;
+	background-color: #FFCC1D;
+	color: #116530;
 }
 .container-fluid .row .selection:hover{
-	color: white;
-	background-color: #116530;
+	color: #116530;
+	background-color: #FFCC1D;
 	text-decoration: none;
 }
 .g-section{
 	padding:  20px 80px;
 	height: 65px;
-	background-color: rgba(0, 0, 0, .4);
+	background-color: #116530;
 	margin-bottom: 20px;
 }
 .lp-section{
@@ -70,6 +70,7 @@
 	.lp-section h1{
 		text-align: center;
 		font-size: 20px;
+		margin-top: -10px;
 	}
 
 	.g-section{

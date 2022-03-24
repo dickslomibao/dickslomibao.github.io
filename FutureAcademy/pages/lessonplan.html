@@ -49,10 +49,10 @@
 			</div>
 		</div>
 
-		<div class="container-fluid lp-section">
+		<div class="container-fluid lp-section" id="displayLesson">
 			<h1>Lesson Plan</h1>
 
-			<div class="row">
+<!-- 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-12">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQrFKL31FFJYlD9ILsThq0id5vlB7lqyZ29h6LCAGznscoTwkCes8LWDJqp3UkKew/embed?start=false&loop=true&delayms=3000" frameborder="0" class="embed-responsive" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -66,7 +66,7 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row" >
 				<div class="col-lg-8 col-md-8 col-12 order-md-2">					
 						<div class="embed-responsive embed-responsive-16by9">
 							<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQiwnqCqzYi0Lc3aPVAC1Fmeg7WttdFgjv1iTRGkEEY63WF-6Q-SDQkFkOiUgU2Dw/embed?start=false&loop=true&delayms=3000" frameborder="0" class="embed-responsive" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -79,13 +79,15 @@
 						<a href="https://docs.google.com/presentation/d/1X9SFdP9Q7xq_P7QcxLLF3YZ0Jql-Wt_v/export?format=pptx" class="btn-download">Download Presentation</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 
 		<script type="text/javascript">
+
 			const button = document.querySelector(".toggle-navigation");
 			const navbar = document.querySelector(".navigation-list");
+			const displayLesson = document.querySelector("#displayLesson");
 
 			button.addEventListener('click', event => {
 
@@ -94,7 +96,41 @@
 				} else {
 				   	navbar.style.display = "none";
 				}
+
 			});
+
+
+			let students = [
+				{
+				    "grade": 1,
+				    "title": "Meaning Of Addition",
+				    "owner": "MaryJane T. Dela Cruz",
+				    "pptLink": "https://docs.google.com/presentation/d/e/2PACX-1vQrFKL31FFJYlD9ILsThq0id5vlB7lqyZ29h6LCAGznscoTwkCes8LWDJqp3UkKew/embed?start=false&loop=true&delayms=3000",
+				    "pptDownload":"https://docs.google.com/presentation/d/11fuJnkUy6GqDfTrYldWuDM0TFj0yWLrB/export?format=pptx",
+				    "videoLink":"123",
+				    "videoDownload": "123",
+				},
+				{
+				    "grade": 1,
+				    "title": "Telling number and name of this days in a week",
+				    "owner": "Karen Castillo",
+				    "pptLink": "https://docs.google.com/presentation/d/e/2PACX-1vQiwnqCqzYi0Lc3aPVAC1Fmeg7WttdFgjv1iTRGkEEY63WF-6Q-SDQkFkOiUgU2Dw/embed?start=false&loop=true&delayms=3000",
+				    "pptDownload":"https://docs.google.com/presentation/d/1X9SFdP9Q7xq_P7QcxLLF3YZ0Jql-Wt_v/export?format=pptx",
+				    "videoLink":"123",
+				    "videoDownload": "123",
+				  },
+			];
+
+
+			for(let i = 0; i < 2; i++){
+
+				let aa = '<div class="row"><div class="col-lg-8 col-md-8 col-12"><div class="embed-responsive embed-responsive-16by9"><iframe src="'+students[i].pptLink+'" frameborder="0" class="embed-responsive" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div></div><div class="col-lg-4 col-md-4 col-12 info-columns order-md-1"><h4>Title: '+students[i].title+'</h4><p>Prepared by: Karen Castillo</p><a href="'+students[i].pptDownload+'" class="btn-download">Download Presentation</a></div></div>';
+
+
+
+					displayLesson.insertAdjacentHTML('beforeend',aa);
+			}
+
 		</script>
 	</body>
 </html>
