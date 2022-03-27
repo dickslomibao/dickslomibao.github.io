@@ -47,7 +47,7 @@ let students = [
 				    "pptDownload":"https://docs.google.com/presentation/d/1C65GPaa0bI9xVr2RtKOHNmwyW68thVdD/export?format=pptx",
 				    "videoLink":"https://drive.google.com/file/d/1EqU2zqQh5RELFliy4QGFQuH6-Utq-cam/preview",
 				    "videoDownload": "1EqU2zqQh5RELFliy4QGFQuH6-Utq-cam",
-				    "contributions":"Content Creator",
+				    "contributions":"Web content writer and creator",
 				},
 				{
 				    "grade": 2,
@@ -177,7 +177,7 @@ let students = [
 				    "pptDownload":"https://docs.google.com/presentation/d/1iqIXa55rVaHmWOTwowAymgZWjS9Yakdp/export?format=pptx",
 				    "videoLink":"https://drive.google.com/file/d/1INzX4OHtXJQ44IAeq6EBCUXrM-tRXCFi/preview",
 				    "videoDownload": "1INzX4OHtXJQ44IAeq6EBCUXrM-tRXCFi",
-				    "contributions":"Content Creator",
+				    "contributions":"Web content writer and creator",
 				},
 				{
 				    "grade": 2,
