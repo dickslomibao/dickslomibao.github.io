@@ -11,7 +11,7 @@
 				dgrade1Btn.classList.add("selected-g");
 				dgrade2Btn.classList.remove("selected-g");
 				dgrade3Btn.classList.remove("selected-g");
-				dlessonplanTitle.innerHTML="Demo lesson for Grade 1";
+				dlessonplanTitle.innerHTML="Video lesson for Grade 1";
 				dsearch.value = "";
 				ddisplayLesson.innerHTML = "";
 
@@ -27,7 +27,7 @@
 				dgrade2Btn.classList.add("selected-g");
 				dgrade1Btn.classList.remove("selected-g");
 				dgrade3Btn.classList.remove("selected-g");
-				dlessonplanTitle.innerHTML="Demo lesson for Grade 2";
+				dlessonplanTitle.innerHTML="Video lesson for Grade 2";
 				ddisplayLesson.innerHTML = "";
 				dsearch.value = "";
 
@@ -40,7 +40,7 @@
 				dgrade3Btn.classList.add("selected-g");
 				dgrade1Btn.classList.remove("selected-g");
 				dgrade2Btn.classList.remove("selected-g");
-				dlessonplanTitle.innerHTML="Demo lesson for Grade 3";
+				dlessonplanTitle.innerHTML="Video lesson for Grade 3";
 				ddisplayLesson.innerHTML = "";
 				dsearch.value = "";
 
