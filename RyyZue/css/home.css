@@ -93,20 +93,22 @@ nav .nav-container .nav-items  ul .active .active-a{
 }
 .header .header-container  .left-content .first-line{
     color: #F5F5F5;
-    font-weight: 1000;
+    font-weight: 700;
     font-size: 40px;
     margin: 0;
 }
 .header .header-container  .left-content  span{
-    color: #F05454;
+    color: forestgreen;
+    font-size: 50px;
+    font-weight: 1000 !important;
 }
 .header .header-container  .left-content .second-line{
     color: #F5F5F5;
-    font-weight: 1000;
     font-size: 50px;
     font-family: 'Archivo Black', sans-serif;
     margin: 0;
-    letter-spacing: 5px;
+    font-weight: 700;
+    
 }
 .header .header-container  .left-content p{
     color: rgba(255, 255, 255, .7);
@@ -150,6 +152,25 @@ nav .nav-container .nav-items  ul .active .active-a{
     margin: 0;
 }
 
+.qoutes-header{
+    width: 100%;
+    background-color: forestgreen;
+}
+.qoutes-header .qoutes-content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #F5F5F5;
+    font-size: 13px;
+}
+.qoutes-header .qoutes-content p{
+    margin:0;
+}
+.qoutes-header .qoutes-content p:nth-child(odd){
+    margin-bottom: 20px;
+}
 
 .packaging{
     width: 100%;
@@ -167,6 +188,10 @@ nav .nav-container .nav-items  ul .active .active-a{
 }
 .packaging .container-packaging .img1{
     border-width: 3px 0 0 3px;
+ }
+ .packaging .container-packaging img:hover{
+     -webkit-transform: scale(1.1);
+     transform: scale(1.1);
  }
  .packaging .container-packaging .img2{
     border-width: 3px 3px 0 0;
@@ -205,7 +230,7 @@ nav .nav-container .nav-items  ul .active .active-a{
 .new-arrival .arrival-content{
     max-width: 1200px;
     margin: auto;
-    padding: 60px 40px;
+    padding: 40px 40px;
 }
 .new-arrival .arrival-content .arrival-title, .popular-title{
     font-family: 'Poppins', sans-serif;
@@ -213,12 +238,17 @@ nav .nav-container .nav-items  ul .active .active-a{
     font-size: 40px;
     color: #F5F5F5;
     margin-bottom: 30px;
+    margin-top: 0;
 }
 .new-arrival .arrival-content img{
     border-style: solid;
     border-width: 3px;
     border-color: none;
     margin-bottom: 20px;
+}
+.new-arrival .arrival-content img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .new-arrival .arrival-content .product-title{
@@ -246,8 +276,6 @@ nav .nav-container .nav-items  ul .active .active-a{
     font-size: 14px;
     border-radius: 10px;
 }
-
-
 .new-popular{
     width: 100%;
     background-color: #f5f5f5;
@@ -282,6 +310,10 @@ nav .nav-container .nav-items  ul .active .active-a{
     border-color: #F5F5F5;
     margin-bottom: 20px;
 }
+.new-popular .popular-content img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .new-popular .popular-content a{
     padding: 10px 40px;
     font-family: 'Poppins', sans-serif;
@@ -292,8 +324,38 @@ nav .nav-container .nav-items  ul .active .active-a{
     border-radius: 10px;
 }
 
+.footer{
+    width: 100%;
+    background-color: #121212;
+}
 
+.footer .footer-content{
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 40px;
+}
 
+.footer .footer-content img{
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.footer .footer-content .footer-title{
+    color: #F5F5F5;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 33px;
+    margin:  5px 0 0 0;
+    font-weight: 1000;
+}
+.footer .footer-content .footer-description{
+    color: rgba(255, 255, 255, .7);
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0 50px 0;
+    font-size: 15px;
+}
  @media only screen and (max-width: 992px) {
 
     .left-content{
@@ -360,7 +422,7 @@ nav .nav-container .nav-items  ul .active .active-a{
  @media only screen and (max-width: 767px) {
 
     .left-content .first-line{
-        font-size: 35px !important;
+        font-size: 45px !important;
         margin-bottom: 10px !important;
         font-family: 'Poppins', sans-serif !important;
 
@@ -386,4 +448,22 @@ nav .nav-container .nav-items  ul .active .active-a{
         font-size: 13px !important;
     }
 
+    nav .nav-container{
+        padding: 0 20px;
+    }
+    .new-arrival .arrival-content{
+        padding: 50px 10px;
+    }
+    .new-popular .popular-content{
+        padding: 40px 10px;
+    }
+    .new-arrival .arrival-content .arrival-title, .popular-title{
+        font-size: 30px;  
+    }
+    nav .nav-container .nav-logo img{
+        margin-right: 20px;
+        width: 50px;
+        height: 50px;
+        margin-top: -5px;
+    }
 }
