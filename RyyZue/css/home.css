@@ -7,6 +7,7 @@ nav{
     padding:20px 0;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 nav .nav-container{
     max-width:1200px;
@@ -79,7 +80,6 @@ nav .nav-container .nav-items  ul .active .active-a{
 .header{
     width: 100%;
     background-color: #121212;
-
 }
 .header .header-container{
     max-width: 1200px;
@@ -88,7 +88,7 @@ nav .nav-container .nav-items  ul .active .active-a{
 }
 
 .header .header-container  .left-content{
-    padding-top: 50px;
+    margin-top:70px;
     font-family: 'Archivo Black', sans-serif;
 }
 .header .header-container  .left-content .first-line{
@@ -117,7 +117,18 @@ nav .nav-container .nav-items  ul .active .active-a{
     font-size: 15px;
     margin-bottom: 30px !important;
 }
-.header .header-container  .left-content a{
+.header .header-container i{
+    font-size: 35px;
+    color: white;
+}
+.header .header-container .a-icon {
+    text-decoration: none;
+}
+.header .header-container a:nth-child(even){
+    margin: 0 20px;
+}
+
+.header .header-container  .left-content .header-a{
     font-size: 15px;
     text-decoration: none;
     color: #f5f5f5;
@@ -163,7 +174,7 @@ nav .nav-container .nav-items  ul .active .active-a{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #F5F5F5;
-    font-size: 13px;
+    font-size: 16px;
 }
 .qoutes-header .qoutes-content p{
     margin:0;
@@ -185,6 +196,7 @@ nav .nav-container .nav-items  ul .active .active-a{
    border-style: solid;
    border-width: 0;
    border-color: #121212;
+   cursor: pointer;
 }
 .packaging .container-packaging .img1{
     border-width: 3px 0 0 3px;
@@ -235,7 +247,7 @@ nav .nav-container .nav-items  ul .active .active-a{
 .new-arrival .arrival-content .arrival-title, .popular-title{
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: #F5F5F5;
     margin-bottom: 30px;
     margin-top: 0;
@@ -245,6 +257,7 @@ nav .nav-container .nav-items  ul .active .active-a{
     border-width: 3px;
     border-color: none;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .new-arrival .arrival-content img:hover{
     -webkit-transform: scale(1.1);
@@ -309,6 +322,7 @@ nav .nav-container .nav-items  ul .active .active-a{
     border-width: 3px;
     border-color: #F5F5F5;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .new-popular .popular-content img:hover{
     -webkit-transform: scale(1.1);
@@ -332,15 +346,16 @@ nav .nav-container .nav-items  ul .active .active-a{
 .footer .footer-content{
     max-width: 1200px;
     margin: auto;
-    padding: 40px 40px;
+    padding: 50px 40px;
 }
 
 .footer .footer-content img{
     width: 50px;
     height: 50px;
-    float: left;
     border-radius: 50%;
     margin-right: 15px;
+    float: left;
+    
 }
 
 .footer .footer-content .footer-title{
@@ -350,13 +365,50 @@ nav .nav-container .nav-items  ul .active .active-a{
     margin:  5px 0 0 0;
     font-weight: 1000;
 }
+
 .footer .footer-content .footer-description{
     color: rgba(255, 255, 255, .7);
     font-family: 'Poppins', sans-serif;
-    margin: 10px 0 50px 0;
+    margin: 10px 0 20px 0;
     font-size: 15px;
 }
- @media only screen and (max-width: 992px) {
+.footer .footer-content i{
+    font-size: 30px;
+    margin-right: 20px;
+    color: #F5F5F5;
+}
+.modal-container{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    display: none;
+    z-index: 1;
+}
+.modal-container .modal-content{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+}
+.modal-container .modal-content div{
+    max-width: 700px;
+}
+.modal-container .modal-content span{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-family: 'Poppins', sans-serif;
+    color: #F05454;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
 
     .left-content{
         padding-top:0 !important;
@@ -373,7 +425,7 @@ nav .nav-container .nav-items  ul .active .active-a{
     .left-content p{
         font-size: 14px !important;
     }
-    .left-content a{
+    .left-content .header-a{
         font-size: 13px !important;
         padding: 10px 30px !important;
     }
@@ -419,7 +471,7 @@ nav .nav-container .nav-items  ul .active .active-a{
 
  }
 
- @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
     .left-content .first-line{
         font-size: 45px !important;
@@ -466,4 +518,8 @@ nav .nav-container .nav-items  ul .active .active-a{
         height: 50px;
         margin-top: -5px;
     }
+    .footer .footer-content{
+        padding: 50px 10px;
+    }
+    
 }
